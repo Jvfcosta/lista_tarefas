@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import type { Task, TaskStatus } from '../app-types';
 import { supabase } from '../lib/supabase';
 import { toast } from 'sonner';

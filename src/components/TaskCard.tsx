@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, Trash2, Bell, PlayCircle, CheckCircle2, Clock } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 import { useTaskContext } from '../context/TaskContext';
 import { Filter, PieChart as PieIcon, BarChart3 } from 'lucide-react';
@@ -67,7 +67,7 @@ const Analytics: React.FC = () => {
                   animationBegin={0}
                   animationDuration={1500}
                 >
-                  {statusData.map((entry, index) => (
+                  {statusData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} className="hover:opacity-80 transition-opacity cursor-pointer" />
                   ))}
                 </Pie>
@@ -95,7 +95,7 @@ const Analytics: React.FC = () => {
                   contentStyle={{ backgroundColor: 'rgba(255,255,255,0.9)', border: 'none', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', fontWeight: 'bold' }}
                 />
                 <Bar dataKey="value" radius={[12, 12, 0, 0]} animationBegin={500} animationDuration={1500}>
-                  {priorityData.map((entry, index) => (
+                  {priorityData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Bar>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Plus, Tag, Flag, Bell, BellOff, Calendar as CalendarIcon, X, Clock } from 'lucide-react';
 import { useTaskContext } from '../context/TaskContext';
 import type { Priority, Category, TaskStatus } from '../app-types';

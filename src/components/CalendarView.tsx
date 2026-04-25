@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { format, parseISO, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, isToday } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { ChevronLeft, ChevronRight, PlusCircle } from 'lucide-react';
@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const CalendarView: React.FC = () => {
   const { tasks, setSelectedDate } = useTaskContext();
-  const [currentDate, setCurrentDate] = React.useState(new Date());
+  const [currentDate, setCurrentDate] = useState(new Date());
   const navigate = useNavigate();
 
   const monthStart = startOfMonth(currentDate);

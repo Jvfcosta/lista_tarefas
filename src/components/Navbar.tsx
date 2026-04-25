@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { CheckSquare, Moon, Sun, LayoutDashboard, Calendar, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';

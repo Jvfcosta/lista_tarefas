@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTaskContext } from '../context/TaskContext';
 
 const ProgressBar: React.FC = () => {
